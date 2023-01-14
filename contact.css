@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header class */
+#header{
+    display: flex;
+    background-color: black;
+    color: white;
+    top: 0px;
+    position: sticky;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+#header::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 88%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 17px;
+    margin-top: -7px;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 88%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+/* logo and logo image styling */
+#logo {
+    margin: 10px 10px;
+}
+#logo img {
+    height: 60px;
+    margin: 15px 15px;
+    border-radius :5px; ;
+}
+#navbar ul {
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    margin-left: 850px;
+    margin-right:0px ;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+/* Contact Section */
+#contact h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: 450px;
+    transition: all 4s ease-in-out;
+}
+
+form h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form input, form textarea , form select{
+    border: 0px;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+}
+form button{
+    padding: 10px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline:none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+form button:hover{
+    background-color: black;
+    color: white;
+}
+#social{
+    display: flex;
+    height: 150px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+#social img{
+    border-radius: 23px;
+    height: 53px;
+    margin: 10px;
+}
+#social a{
+    text-decoration:underline;
+    color: black;
+}
+#endsection{
+    font-family: 'Space Mono', monospace;
+    margin-left: 150px;
+    width: 500px;
+    height: 250px;
+}
+#endsection a{
+    text-decoration:underline;
+    color: black;
+}
+#endsection a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 23px;
+    font-family: 'Permanent Marker', cursive;
+}
+#footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+}

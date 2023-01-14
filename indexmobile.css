@@ -1,0 +1,120 @@
+/* Work Section */
+#navbar{
+    flex-direction: column;
+    font-size: 13px ;
+    position: sticky;
+}
+#navbar ul {
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    margin-left: 0px;
+}
+#navbar ul li a{
+    font-size: 17px;
+    padding: 0px 5px;
+    padding-bottom: 8px;
+    background-color: white;
+    font-size: 17px;
+}
+#work h1{
+    margin-bottom: 40px;
+}
+#first{
+    margin-left: -390px;
+    margin-top: -190px;
+}
+#first img{
+    height: 300px;
+    width: 350px;
+}
+#firstwriting{
+    font-size: 13px;
+    margin-top: 40px;
+    margin-left: -30px;
+    height: 300px;
+    width: 350px;
+}
+#second{
+    margin-left: -390px;
+    margin-top: -260px;
+}
+#second img{
+    height: 300px;
+    width: 350px;
+}
+#secondwriting{
+    font-size: 13px;
+    margin-top: -80px;
+    margin-left:-35px;
+    height: 300px;
+    width: 350px;
+}
+#third{
+    margin-left: -40px;
+    margin-top: -560px;
+}
+#third img{
+    height: 300px;
+    width: 350px;
+}
+#thirdwriting{
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: -30px;
+    height: 300px;
+    width: 350px;
+}
+#fourth{
+    margin-left: -390px;
+    margin-top: -1180px;
+}
+#fourth video{
+    height: 300px;
+    width: 350px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+#fourthwriting{
+    height: 300px;
+    width: 350px;
+    margin-top: -240px;
+    margin-left: -35px;
+    font-size: 13px;
+}
+#fifth{
+    margin-left: -390px;
+    margin-top: -1190px;
+}
+#fifth img{
+    height: 300px;
+    width: 350px;
+}
+#fifthwriting{
+    font-size: 13px;
+    margin-top: -70px;
+    margin-left: -30px;
+    height: 300px;
+    width: 350px;
+}
+#social{
+    flex-direction: row;
+    height: 300px;
+    width: 350px;
+    margin-top: -755px;
+    margin-left: 0px;
+}
+#social img{
+    height: 45px;
+    width: 45px;
+}
+#social a{
+    margin-top: -200px;
+    padding: 3px 3px;
+}
+#endsection{
+    margin-left: 10px;
+    margin-top: -180px;
+    height: 350px;
+    width: 350px;
+    font-size: 13px;
+}
