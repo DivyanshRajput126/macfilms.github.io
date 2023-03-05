@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)"  href="contactmobile.css">
+</head>
+<body>
+    <header id="header">Mac Films</header>
+    <nav id="navbar">
+        <!-- left side for logo  -->
+        <!-- right side for navigation bar -->
+        <div id="logo">
+            <img src="MacFilms/Divyanshlogo.jpg" alt="Mac Films">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Work</a></li>
+            <li class="item"><a href="aboutus.html">About Us</a></li>
+            <li class="item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="contact">
+        <div id="photo"></div>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact Us</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" 
+             placeholder="Enter your name" >
+            <label for="email">Email:</label>
+            <input type="email" id="email"  placeholder="Enter your email" >
+            <label for="phone">Contact No.:</label>
+            <input type="text" id="phone" placeholder="Ente your contact number" >
+            <label for="shoot">Type of Shoot:</label>
+            <select  id="shoot"  >
+                <option value="shoot">Select type of shoot</option>
+                <option value="wedding">Wedding Shoot</option>
+                <option value="couple">Couple Shoot</option>
+                <option value="fashion">Fashion Shoot</option>
+                <option value="pre-wedding">Pre-Wedding Shoot</option>
+                <option value="event">Event Shoot</option>
+            </select>
+            <label for="message" id="message">message</label>
+            <textarea 0 id="message"  rows="3" placeholder="How can we help you"></textarea>
+            <button type="submit" id="btn" value="SEND MESSAGE" >Send</button>
+        </form>
+    </div>
+   
+    <div id="social">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/mac_films_9" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/733/733558.png" alt="instagram">
+        </a>
+        <a href="https://twitter.com/i/flow/login" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/179/179342.png" alt="twitter">
+        </a>
+        <a href="mailto:mac_films9@gmail.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Email">
+        </a>
+        <a href="https://wa.me/917048670747" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="Whatsapp">
+        </a>
+    </div>
+    <div id="endsection">
+        <p>
+        <h2>What everyone likes about photographer is that they capture a moment that's gone forever in photograph and which is impossible to produce.</h2></p>
+        <p><a href="index.html" >Work</a> <a href="aboutus.html" >About Us</a> <a href="portfolio.html" >Portfolio</a></p>
+
+    </div>
+    <footer id="footer">
+        copyright@macfilms All Right Reserved.
+    </footer>
+
+
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e){
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var shoot = document.getElementById('shoot').value;
+            var message = document.getElementById('message').value;
+
+            var body = "name: "+name +"<br>" + "E-mail: "+email+"<br>"+"Phone: "+phone+"<br>"+"Shoot-type: "+shoot+"<br>"+"Message from user: "+message;
+            e.preventDefault()
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "divyanshrajput126@gmail.com",
+            Password : "9EAF1798366DDF238BCD1083B9FB443F88BA",
+            To : 'divyanshr264@gmail.com',
+            From : "divyanshrajput126@gmail.com",
+            Subject : "Enquiry for shoot",
+            Body : body
+            }).then(
+            message => alert(message)
+            );
+        });
+    </script>
+</html>
